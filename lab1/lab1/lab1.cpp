@@ -7,7 +7,7 @@ using namespace std;
 
 void SearchTextAndOutput(std::string & string, const std::string & TextToSearch, int & numberString)
 {
-	int pos = string.find(TextToSearch);
+	string::size_type pos = string.find(TextToSearch);
 	if (pos != (-1))
 	{
 		cout << numberString << endl;
@@ -33,7 +33,7 @@ void Dispatch(char *argv[])
 		cout << "Happened error with opening file" << endl;
 	}
 
-	int numberString = 1;
+	string::size_type numberString = 1;
 
 	while (!inputFile.eof())
 	{
