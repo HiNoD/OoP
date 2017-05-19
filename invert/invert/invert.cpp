@@ -69,53 +69,6 @@ void PrintMatrix(float invertedMatrix[][3])
 	}
 }
 
-void OperatingRoom(char *argv[])
-{
-	string inputFileName = argv[1];
-	ifstream inputFile(inputFileName);
-
-	if (!inputFile.is_open())
-	{
-		cout << "Happened error with opening file" << endl;
-	}
-	else
-	{
-		const int N = 3, M = 3;
-		bool zeroDeterminant= false;
-		float originalMatrix[N][M], transpoceMatrix[N][M], invertedMatrix[N][M], cofactorMatrix[N][M], determinant = 0;
-		for (int i = 0; i < N; i++)
-		{
-			for (int j = 0; j < M; j++)
-			{
-				inputFile >> originalMatrix[i][j];
-			}
-		}
-		DeterminantOriginalMatrix(originalMatrix, zeroDeterminant, determinant);
-		if (!zeroDeterminant)
-		{
-			TransposeOfTheOriginalMatrix(originalMatrix, transpoceMatrix);
-			DeterminantOfTranspoceMatrix(transpoceMatrix, cofactorMatrix);
-			InvertingMatrix(cofactorMatrix, determinant, invertedMatrix);
-			PrintMatrix(invertedMatrix);
-		}
-		else
-		{
-			cout << "This matrix does not have an inverted matrix" << endl;
-		}
-		for (int i = 0; i < N; i++)
-		{
-			for (int j = 0; j < M; j++)
-			{
-				originalMatrix[i][j] = 0;
-				transpoceMatrix[i][j] = 0;
-				invertedMatrix[i][j] = 0;
-				cofactorMatrix[i][j] = 0;
-			}
-		}
-		inputFile.close();
-	}
-}
-
 void PrintHelp()
 {
 	cout << "Example: invert.exe matrix_file" << endl;
@@ -134,7 +87,49 @@ int main(int argc, char * argv[])
 	}
 	else
 	{
-		OperatingRoom(argv);
+		string inputFileName = argv[1];
+		ifstream inputFile(inputFileName);
+
+		if (!inputFile.is_open())
+		{
+			cout << "Happened error with opening file" << endl;
+		}
+		else
+		{
+			const int N = 3, M = 3;
+			bool zeroDeterminant = false;
+			float originalMatrix[N][M], transpoceMatrix[N][M], invertedMatrix[N][M], cofactorMatrix[N][M], determinant = 0;
+			for (int i = 0; i < N; i++)
+			{
+				for (int j = 0; j < M; j++)
+				{
+					inputFile >> originalMatrix[i][j];
+				}
+			}
+			DeterminantOriginalMatrix(originalMatrix, zeroDeterminant, determinant);
+			if (!zeroDeterminant)
+			{
+				TransposeOfTheOriginalMatrix(originalMatrix, transpoceMatrix);
+				DeterminantOfTranspoceMatrix(transpoceMatrix, cofactorMatrix);
+				InvertingMatrix(cofactorMatrix, determinant, invertedMatrix);
+				PrintMatrix(invertedMatrix);
+			}
+			else
+			{
+				cout << "This matrix does not have an inverted matrix" << endl;
+			}
+			for (int i = 0; i < N; i++)
+			{
+				for (int j = 0; j < M; j++)
+				{
+					originalMatrix[i][j] = 0;
+					transpoceMatrix[i][j] = 0;
+					invertedMatrix[i][j] = 0;
+					cofactorMatrix[i][j] = 0;
+				}
+			}
+			inputFile.close();
+		}
 	}
     return 0;
 }
