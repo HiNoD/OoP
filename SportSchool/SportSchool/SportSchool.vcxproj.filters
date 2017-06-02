@@ -25,6 +25,7 @@
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="WorkingWithArray.h">
+    <ClInclude Include="WorkingWithSet.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
@@ -36,6 +37,7 @@
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
     <ClCompile Include="WorkingWithArray.cpp">
+    <ClCompile Include="WorkingWithSet.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
   </ItemGroup>
