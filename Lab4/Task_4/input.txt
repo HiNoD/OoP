@@ -1,0 +1,20 @@
+circle 500, 50, 35, #fea601, #ffff00
+
+circle 280, 100, 30, #ff090f, #14c6eb
+
+rectangle 100, 245, 330, 255, #feabb1, #fed3d7
+
+rectangle 190, 430, 200, 470, #feabb1, #fed3d7
+
+rectangle 230, 430, 240, 470, #feabb1, #fed3d7
+
+triangle 105, 100, 30, 330, 190, 330, #ff090f, #14c6eb
+
+circle 187, 180, 25, #feabb1, #fed3d7
+
+triangle 95, 85, 95, 105, 115, 95, #ff090f, #14c6eb
+
+triangle 107.5, 90, 127.5, 100, 127.5, 80, #ff090f, #14c6eb
+
+lineSegment 145, 320, 345, 320, #ffffff
+sss
