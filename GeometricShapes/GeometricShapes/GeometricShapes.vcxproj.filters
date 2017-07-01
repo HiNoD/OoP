@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesControl">
+      <UniqueIdentifier>{2fcdc554-65d8-4380-ae7b-549879a79ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesContainer">
+      <UniqueIdentifier>{168a0519-7689-423f-859a-613b209f81ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesView">
+      <UniqueIdentifier>{809d00aa-5de8-42d0-b7f4-1f04d353241d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesView\Shapes">
+      <UniqueIdentifier>{f1f81f43-7bf9-4192-bd38-6b5d8b37d653}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesView\Shapes\Line">
+      <UniqueIdentifier>{6251b578-22b8-455c-ac14-8e711fd89f92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesView\Shapes\Circle">
+      <UniqueIdentifier>{2bcd6bf3-5a47-45bb-8a7d-238907349e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesView\ShapeViewer">
+      <UniqueIdentifier>{c67de281-2d5d-490e-9f4a-94bc3bf4f564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesView\Shapes\Rectangle">
+      <UniqueIdentifier>{706b1112-5b66-4fd6-8e29-aa3b43ad51cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesView\Shapes\Triangle">
+      <UniqueIdentifier>{0319273c-bfa7-494c-848f-b3405d4053fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesLogic">
+      <UniqueIdentifier>{3f17a767-1970-473e-9db1-25947e0236ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesLogic\Point">
+      <UniqueIdentifier>{97a6e3be-422b-4ca9-9bf1-fe488364aad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesLogic\Shape">
+      <UniqueIdentifier>{4af877f5-c0a0-4f09-85b3-5e908cc966e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesLogic\LineSegment">
+      <UniqueIdentifier>{0d1a7ded-1bfa-44ec-ace4-d6db42e3fd4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesLogic\SolidShape">
+      <UniqueIdentifier>{9604d609-4c24-45f3-bac7-b2a1fb04fd34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesLogic\SolidShape\Triangle">
+      <UniqueIdentifier>{c57bed8c-a46e-4682-ab9c-7e0a3e2dd9f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesLogic\SolidShape\Rectangle">
+      <UniqueIdentifier>{b442ff2c-1ca1-402f-9838-1bbdbdaea8f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\ShapesLogic\SolidShape\Circle">
+      <UniqueIdentifier>{6672b8e3-dcb1-4bdd-8af3-8e4ff33ff7e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="SolidShape.h">
+      <Filter>Файлы исходного кода\ShapesLogic\SolidShape</Filter>
+    </ClInclude>
+    <ClInclude Include="Shape.h">
+      <Filter>Файлы исходного кода\ShapesLogic\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="LineSegment.h">
+      <Filter>Файлы исходного кода\ShapesLogic\LineSegment</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
+      <Filter>Файлы исходного кода\ShapesLogic\SolidShape\Rectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle.h">
+      <Filter>Файлы исходного кода\ShapesLogic\SolidShape\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Файлы исходного кода\ShapesLogic\SolidShape\Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapesControl.h">
+      <Filter>Файлы исходного кода\ShapesControl</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapesContainer.h">
+      <Filter>Файлы исходного кода\ShapesContainer</Filter>
+    </ClInclude>
+    <ClInclude Include="LineSegment_view.h">
+      <Filter>Файлы исходного кода\ShapesView\Shapes\Line</Filter>
+    </ClInclude>
+    <ClInclude Include="Circle_view.h">
+      <Filter>Файлы исходного кода\ShapesView\Shapes\Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="ShapeViewer.h">
+      <Filter>Файлы исходного кода\ShapesView\ShapeViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="IShapeView.h">
+      <Filter>Файлы исходного кода\ShapesView\Shapes</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle_view.h">
+      <Filter>Файлы исходного кода\ShapesView\Shapes\Rectangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle_view.h">
+      <Filter>Файлы исходного кода\ShapesView\Shapes\Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Файлы исходного кода\ShapesLogic\Point</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Point.cpp">
+      <Filter>Файлы исходного кода\ShapesLogic\Point</Filter>
+    </ClCompile>
+    <ClCompile Include="LineSegment.cpp">
+      <Filter>Файлы исходного кода\ShapesLogic\LineSegment</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Файлы исходного кода\ShapesLogic\SolidShape\Rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle.cpp">
+      <Filter>Файлы исходного кода\ShapesLogic\SolidShape\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Файлы исходного кода\ShapesLogic\SolidShape\Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="SolidShape.cpp">
+      <Filter>Файлы исходного кода\ShapesLogic\SolidShape</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapesContainer.cpp">
+      <Filter>Файлы исходного кода\ShapesContainer</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapesControl.cpp">
+      <Filter>Файлы исходного кода\ShapesControl</Filter>
+    </ClCompile>
+    <ClCompile Include="LineSegment_view.cpp">
+      <Filter>Файлы исходного кода\ShapesView\Shapes\Line</Filter>
+    </ClCompile>
+    <ClCompile Include="Circle_view.cpp">
+      <Filter>Файлы исходного кода\ShapesView\Shapes\Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeViewer.cpp">
+      <Filter>Файлы исходного кода\ShapesView\ShapeViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle_view.cpp">
+      <Filter>Файлы исходного кода\ShapesView\Shapes\Rectangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle_view.cpp">
+      <Filter>Файлы исходного кода\ShapesView\Shapes\Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="IShapeView.cpp">
+      <Filter>Файлы исходного кода\ShapesView\Shapes</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
