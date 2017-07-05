@@ -19,7 +19,7 @@ enum class DirectionMovement
 	movingForward = 1
 };
 
-struct RangesVector
+struct VectorRanges
 {
 	int min;
 	int max;
@@ -40,7 +40,7 @@ public:
 	bool EngineIsOn()const;
 	DirectionMovement GetDirection()const;
 private:
-	RangesVector GetRangeOfSpeeds(Gear gear)const;
+	VectorRanges GetRangeOfSpeeds(Gear gear)const;
 	bool SpeedInGearRange(Gear gear, int speed)const;
 	bool SwitchToReverseGearIsPossible()const;
 private:

@@ -15,7 +15,7 @@ CCar::CCar() :
 {
 }
 
-RangesVector CCar::GetRangeOfSpeeds(Gear gear)const
+VectorRanges CCar::GetRangeOfSpeeds(Gear gear)const
 {
 	switch (gear)
 	{
