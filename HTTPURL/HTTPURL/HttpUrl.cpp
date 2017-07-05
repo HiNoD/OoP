@@ -89,7 +89,7 @@ CHttpUrl::UrlComponents CHttpUrl::ParseUrl(string const & url)
 
 	auto document = urlRef.to_string();
 
-	return make_tuple(protocol, ValidateDomainName(domain), port, ValidateDocument(document));
+	return make_tuple(protocol, domain, port, ValidateDocument(document));
 }
 
 const string & CHttpUrl::ValidateDomainName(string const & domain)
@@ -167,6 +167,6 @@ string CHttpUrl::ParsePort(string_ref & str)
 {
 	auto portEnd = str.find('/');
 	auto portStr = str.substr(1, portEnd - 1).to_string();
-
+	
 	return portStr.empty() ? throw CUrlParsingError("Port parsing error.") : portStr;
 }

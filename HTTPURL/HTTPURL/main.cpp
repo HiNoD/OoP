@@ -87,7 +87,7 @@ void InteractWithUser()
 		}
 		catch (...)
 		{
-			cout << "Unknow error type." << endl;
+			cout << "Port is out of the bounds" << endl;
 		}
 	}
 }
