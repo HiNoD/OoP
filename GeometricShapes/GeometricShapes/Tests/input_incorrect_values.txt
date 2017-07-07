@@ -1,3 +1,0 @@
-Point 
-Rectangle 10 33 1
-Circle 12
