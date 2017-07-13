@@ -1,5 +1,4 @@
 #pragma once
-#include "stdafx.h"
 #include "VolumeBody.h"
 
 class CCone final : public CVolumeBody

@@ -5,8 +5,8 @@
 
 using namespace std;
 
-typedef std::map<std::string, double> dataVariables;
-using Vector = std::vector<std::string>;
+typedef std::map<std::string, double> DataVariables;
+using VectorOfString = std::vector<std::string>;
 
 TypeOperand CheckOperand(string const &op)
 {
@@ -71,7 +71,7 @@ bool CCalculator::PrintVariables()
 	return true;
 }
 
-bool CCalculator::AddFunction(Vector const &inst)
+bool CCalculator::AddFunction(VectorOfString const &inst)
 {
 	string nameFunc = inst[1];
 	if (!this->m_functions.empty() && m_functions.find(nameFunc) != m_functions.end())
@@ -79,7 +79,7 @@ bool CCalculator::AddFunction(Vector const &inst)
 		return false;
 	}
 	string firstName = inst[NUMBER_POS_FIRST_NAME];
-	CFunction data = CFunction(firstName);
+	CFunction data(firstName);
 	if (inst.size() > 5)
 	{
 		string operation = inst[NUMBER_POS_OPER];

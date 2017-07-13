@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Body.h"
 
 CBody::CBody(const std::string & type, double density)

@@ -1,7 +1,7 @@
+#include "stdafx.h"
 #include "Interpreter.h"
 
 using namespace std;
-
 
 std::shared_ptr<CBody> CBodyFactory::CreateBody(std::string const & name)
 {

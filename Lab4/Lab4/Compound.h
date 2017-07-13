@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include "stdafx.h"
 #include "Body.h"
 
 class CCompound final : public CBody

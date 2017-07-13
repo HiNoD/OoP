@@ -1,6 +1,5 @@
+#include "stdafx.h"
 #include "Cone.h"
-
-
 
 CCone::CCone(double density, double radius, double height)
 	: CVolumeBody(density, radius, height, "Cone")

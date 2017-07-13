@@ -1,6 +1,5 @@
+#include "stdafx.h"
 #include "Parallelepiped.h"
-
-
 
 CParallelepiped::CParallelepiped(double density, double height, double width, double depth)
 	: CSolidBody(density, "Parallelepiped")

@@ -16,10 +16,10 @@ static const int NUMBER_POS_FIRST_NAME = 3;
 static const int NUMBER_POS_OPER = 4;
 static const int NUMBER_POS_SEC_NAME = 5;
 
-typedef std::map<std::string, double> dataVariables;
+typedef std::map<std::string, double> DataVariables;
 using Vector = std::vector<std::string>;
 
-enum TypeOperand
+enum class TypeOperand
 {
 	addition,
 	substraction,

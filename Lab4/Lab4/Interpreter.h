@@ -1,6 +1,4 @@
 #pragma once
-#include "stdafx.h"
-
 #include "Cone.h"
 #include "Cylinder.h"
 #include "Parallelepiped.h"

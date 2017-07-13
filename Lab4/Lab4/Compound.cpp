@@ -1,5 +1,5 @@
+#include "stdafx.h"
 #include "Compound.h"
-
 
 using namespace std;
 
@@ -8,7 +8,7 @@ CCompound::CCompound()
 {
 }
 
-// TODO: может принимать себя из самого себя
+
 void CCompound::AppendShape(std::shared_ptr<CBody> && shape)
 {
 	const CBody *body = this;
