@@ -150,7 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Lab4\Body.h" />
-    <ClInclude Include="..\Lab4\Compaund.h" />
     <ClInclude Include="..\Lab4\Cone.h" />
     <ClInclude Include="..\Lab4\Cylinder.h" />
     <ClInclude Include="..\Lab4\Parallelepiped.h" />
@@ -162,7 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Lab4\Body.cpp" />
-    <ClCompile Include="..\Lab4\Compaund.cpp" />
     <ClCompile Include="..\Lab4\Cone.cpp" />
     <ClCompile Include="..\Lab4\Cylinder.cpp" />
     <ClCompile Include="..\Lab4\Parallelepiped.cpp" />
