@@ -22,7 +22,7 @@
     <ProjectGuid>{E8E63C04-47EF-458C-B086-F23AC50AFC93}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>Lab4_Tests</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -150,7 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Lab4\Body.h" />
-    <ClInclude Include="..\Lab4\Compaund.h" />
+    <ClInclude Include="..\Lab4\Compound.h" />
     <ClInclude Include="..\Lab4\Cone.h" />
     <ClInclude Include="..\Lab4\Cylinder.h" />
     <ClInclude Include="..\Lab4\Parallelepiped.h" />
@@ -162,7 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Lab4\Body.cpp" />
-    <ClCompile Include="..\Lab4\Compaund.cpp" />
+    <ClCompile Include="..\Lab4\Compound.cpp" />
     <ClCompile Include="..\Lab4\Cone.cpp" />
     <ClCompile Include="..\Lab4\Cylinder.cpp" />
     <ClCompile Include="..\Lab4\Parallelepiped.cpp" />

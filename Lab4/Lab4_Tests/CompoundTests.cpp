@@ -2,11 +2,13 @@
 #include "../Lab4/Compound.h"
 #include "../Lab4/Cone.h"
 
+//TODO: автозапуск тестов
+
 using namespace std;
 
 struct Compound_
 {
-	shared_ptr<CCompound> pCompound = make_shared<CCompound>();
+	unique_ptr<CCompound> pCompound = make_unique<CCompound>();
 };
 
 BOOST_FIXTURE_TEST_SUITE(Compound, Compound_)
@@ -19,7 +21,7 @@ BOOST_FIXTURE_TEST_SUITE(Compound, Compound_)
 	{
 		BOOST_CHECK_EQUAL(pCompound->GetShapesCount(), 0);
 		auto cone = CCone(15, 10, 40);
-		pCompound->AppendShape(make_shared<CCone>(CCone(15, 10, 40)));
+		pCompound->AppendShape(make_unique<CCone>(CCone(15, 10, 40)));
 		BOOST_CHECK_EQUAL(pCompound->GetShapesCount(), 1);
 	}
 
@@ -31,7 +33,7 @@ BOOST_FIXTURE_TEST_SUITE(Compound, Compound_)
 		const double expectedVolume = 4188.79;
 		Consist_of_one_body_()
 		{
-			pCompound->AppendShape(make_shared<CCone>(CCone(expectedDensity, expectedRadius, expectedHeight)));
+			pCompound->AppendShape(make_unique<CCone>(CCone(expectedDensity, expectedRadius, expectedHeight)));
 		}
 	};
 	BOOST_FIXTURE_TEST_SUITE(Consist_of_one_body, Consist_of_one_body_)
@@ -69,12 +71,12 @@ Cone:
 		BOOST_AUTO_TEST_CASE(can_not_take_itself)
 		{			
 			BOOST_CHECK_EQUAL(pCompound->GetShapesCount(), 1);
-			pCompound->AppendShape(pCompound);
+			pCompound->AppendShape(std::move(pCompound));
 			BOOST_CHECK_EQUAL(pCompound->GetShapesCount(), 1);
 		}
 		BOOST_AUTO_TEST_CASE(can_take_yet_one_body)
 		{
-			pCompound->AppendShape(make_shared<CCone>(CCone(expectedDensity, expectedRadius, expectedHeight)));
+			pCompound->AppendShape(make_unique<CCone>(CCone(expectedDensity, expectedRadius, expectedHeight)));
 			BOOST_CHECK_EQUAL(pCompound->GetShapesCount(), 2);
 		}
 
@@ -82,4 +84,3 @@ Cone:
 
 
 BOOST_AUTO_TEST_SUITE_END()
-

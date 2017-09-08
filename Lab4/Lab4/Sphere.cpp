@@ -1,6 +1,5 @@
 #include "Sphere.h"
 
-
 CSphere::CSphere(double density, double radius)
 	: CSolidBody(density, "Sphere")
 	, m_radius(radius)

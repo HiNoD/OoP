@@ -2,6 +2,7 @@
 #include "stdafx.h"
 #include "SolidBody.h"
 
+//TODO: бшохкхрэ хг ухдепнб #include "stdafx.h"
 class CParallelepiped final : public CSolidBody
 {
 public:

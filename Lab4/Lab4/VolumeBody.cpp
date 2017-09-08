@@ -1,6 +1,5 @@
 #include "VolumeBody.h"
 
-
 CVolumeBody::CVolumeBody(double density, double radius, double height, std::string const & name)
 	:CSolidBody(density, name)
 	, m_radius(radius)

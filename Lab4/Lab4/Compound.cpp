@@ -1,6 +1,5 @@
 #include "Compound.h"
 
-
 using namespace std;
 
 CCompound::CCompound()
@@ -8,8 +7,7 @@ CCompound::CCompound()
 {
 }
 
-// TODO: может принимать себя из самого себя
-void CCompound::AppendShape(std::shared_ptr<CBody> && shape)
+void CCompound::AppendShape(std::unique_ptr<CBody> && shape)
 {
 	const CBody *body = this;
 	const CBody *second = shape.get();
@@ -19,7 +17,6 @@ void CCompound::AppendShape(std::shared_ptr<CBody> && shape)
 		AddMass();
 		AddVolume();
 	}
-	
 }
 
 size_t CCompound::GetShapesCount() const
@@ -46,7 +43,7 @@ void CCompound::AddMass()
 {
 	for (auto const & shape : m_shapes)
 	{
-		m_mass += (shape)->GetMass();
+		m_mass += shape->GetMass();
 	}
 }
 
@@ -54,7 +51,7 @@ void CCompound::AddVolume()
 {
 	for (auto const & shape : m_shapes)
 	{
-		m_volume += (shape)->GetVolume();
+		m_volume += shape->GetVolume();
 	}
 }
 
@@ -68,7 +65,7 @@ std::string CCompound::ToInfo() const
 	string info;
 	for (auto const & shape : m_shapes)
 	{
-		info += (shape)->ToString();
+		info += shape->ToString();
 	}
 	return info;
 }

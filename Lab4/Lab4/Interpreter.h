@@ -1,5 +1,4 @@
 #pragma once
-#include "stdafx.h"
 
 #include "Cone.h"
 #include "Cylinder.h"
@@ -10,21 +9,23 @@
 class CBodyFactory
 {
 public:
-	std::shared_ptr<CBody> CreateBody(std::string const & name);
+	std::unique_ptr<CBody> CreateBody(std::string const & name);
 private:
 	CCompound CreateCompound();
 	double GetData(std::string const & type);
+
 	unsigned nestingLevel = 0;
 };
 
+//TODO::::Вынести что-то одно
 class CInterpreter
 {
 public:
-	CInterpreter() = default;
 	void SetBody(std::string const & name); 
 	void DisplaySummaryInfo();
+
 private:
-	std::vector<std::shared_ptr<CBody>> m_bodies;
+	std::vector<std::unique_ptr<CBody>> m_bodies;
 	CBodyFactory m_bodyFactory;
 };
 

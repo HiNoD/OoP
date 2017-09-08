@@ -85,7 +85,7 @@ BOOST_FIXTURE_TEST_SUITE(before_declared_string_by_value, my_string_can_be_decla
 		BOOST_CHECK_EQUAL(myString.GetStringData()[myString.GetLength()], '\0');
 	}
 
-
+	//TODO: избавиться от substr
 	BOOST_AUTO_TEST_CASE(attempt_to_take_substring_without_incorrect_args_returns_null_str)
 	{
 		BOOST_REQUIRE_THROW(auto substr = myString.SubString(4u, 0u), std::out_of_range);

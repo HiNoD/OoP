@@ -8,4 +8,3 @@ public:
 	CCone(double density, double radius, double height);
 	double GetVolume() const override;
 };
-

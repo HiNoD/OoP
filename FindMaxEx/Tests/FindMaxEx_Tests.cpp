@@ -15,7 +15,7 @@ BOOST_AUTO_TEST_SUITE(FindMaxEx)
 		std::vector<int> arr = { 54, 96, 213, 654, 321, 34, 33 };
 		int maxValue = 0;
 		BOOST_CHECK(FindMax(arr, maxValue, [](int lhs, int rhs) {return lhs < rhs; }));
-		BOOST_CHECK(maxValue == 654);
+		BOOST_CHECK_EQUAL(maxValue, 654);
 	}
 
 	BOOST_AUTO_TEST_CASE(length_strings_can_be_compared_between_themselves_and_with_the_maximum_length_to_obtain)
@@ -32,7 +32,7 @@ BOOST_AUTO_TEST_SUITE(FindMaxEx)
 		std::vector<int> arr = { 6546, 5348, 2318, 97645313, 548621, 54212 };
 		int maxValue = 0;
 		BOOST_CHECK(FindMax(arr, maxValue));
-		BOOST_CHECK(maxValue == 97645313);
+		BOOST_CHECK_EQUAL(maxValue, 97645313);
 	}
 
 BOOST_AUTO_TEST_SUITE_END()

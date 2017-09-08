@@ -2,7 +2,6 @@
 #include "stdafx.h"
 #include "SolidBody.h"
 
-
 class CSphere final : public CSolidBody
 {
 public:

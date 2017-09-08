@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "Interpreter.h"
 
-
+//TODO: магические числа
 
 int main()
 {
