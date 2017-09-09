@@ -19,11 +19,7 @@ bool FindMax(std::vector<T> const &arr, T &maxValue, Less const &less)
 	{
 		if (less(*value, *it))
 		{
-<<<<<<< HEAD
 			value = it;
-=======
-			value = *it;
->>>>>>> origin/master
 		}
 	}
 	maxValue = *value;
