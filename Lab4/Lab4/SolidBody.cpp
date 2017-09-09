@@ -1,6 +1,5 @@
+#include "stdafx.h"
 #include "SolidBody.h"
-
-
 
 CSolidBody::CSolidBody(double density, std::string const & name)
 	:CBody(name, density)

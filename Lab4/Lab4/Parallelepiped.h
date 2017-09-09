@@ -1,5 +1,4 @@
 #pragma once
-#include "stdafx.h"
 #include "SolidBody.h"
 
 //TODO: бшохкхрэ хг ухдепнб #include "stdafx.h"

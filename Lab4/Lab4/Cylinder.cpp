@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "Cylinder.h"
 
 CCylinder::CCylinder(double density, double radius, double height)

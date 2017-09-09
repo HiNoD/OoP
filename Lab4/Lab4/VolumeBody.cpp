@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "VolumeBody.h"
 
 CVolumeBody::CVolumeBody(double density, double radius, double height, std::string const & name)

@@ -5,11 +5,9 @@
 #include "FunctionContext.h"
 #include "Config.h"
 #include <iostream>
-#include "View.h"
 
 typedef std::map<std::string, CFunction> dataFunctions;
 
-//TODO: имена подобраны не правильно
 
 class CCalculator : public IFunctionContext
 {
@@ -27,7 +25,6 @@ public:
 	bool GetValueVariable(std::string const &var, double &number);
 	
 private:
-	dataVariables m_variables;
+	DataVariables m_variables;
 	dataFunctions m_functions;
-	CView m_view;
 };
