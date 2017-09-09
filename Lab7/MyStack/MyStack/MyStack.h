@@ -64,12 +64,10 @@ template <typename T>
 void CMyStack<T>::Push(T const &value)
 {
 	SElement<T> *temp = nullptr;
-	// TODO: useless condition and if-body
 	if ((temp = new SElement<T>()) == nullptr)
 	{
 		throw std::exception("it's impossible to allocate memory for the stack.");
 	}
-	// TODO: fix memory leak when value copy ctor throws exception.
 	temp->value = value;
 	temp->next = m_head;
 	m_head = temp;
@@ -81,7 +79,6 @@ void CMyStack<T>::Pop()
 {
 	if (m_size == 0)
 	{
-		// TODO: use `runtime_error`,`invalid_argument`, `logic_error`, `out_of_range` or something else
 		throw std::exception("stack is empty.");
 	}
 	auto temp = m_head->next;
@@ -93,7 +90,6 @@ void CMyStack<T>::Pop()
 template <typename T>
 T CMyStack<T>::Peek() const
 {
-	// TODO: use `runtime_error`,`invalid_argument`, `logic_error`, `out_of_range` or something else
 	if (m_size == 0)
 	{
 		throw std::exception("stack is empty.");
@@ -124,7 +120,6 @@ void const CMyStack<T>::operator=(CMyStack const &other)
 	{
 		Clear();
 		auto temp = other.m_head;
-		// TODO:don't allocate memory twice
 		CMyStack<T> bufStack;
 		for (size_t i = 0; i != other.m_size; ++i)
 		{
@@ -148,7 +143,6 @@ void const CMyStack<T>::operator=(CMyStack && other)
 {
 	if (m_head != other.m_head)
 	{
-		// TODO: move ctor should only move data without new allocations
 		Clear();
 		*this = other;
 		other.Clear();
