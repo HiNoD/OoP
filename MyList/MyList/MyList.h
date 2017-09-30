@@ -59,7 +59,7 @@ public:
 		return m_currentNode != iterator.m_currentNode;
 	}
 
-	friend const MyIterator<T> & operator++ (MyIterator<T> & iterator)
+	friend MyIterator<T> & operator++ (MyIterator<T> & iterator)
 	{
 		if (iterator.IsReverse())
 		{
@@ -72,7 +72,7 @@ public:
 		return iterator;
 	}
 
-	friend const MyIterator<T> & operator-- (MyIterator<T> & iterator)
+	friend MyIterator<T> & operator-- (MyIterator<T> & iterator)
 	{
 		if (iterator.IsReverse())
 		{
@@ -85,7 +85,7 @@ public:
 		return iterator;
 	}
 
-	friend const MyIterator<T> operator++ (MyIterator<T> & iterator, int)
+	friend MyIterator<T> operator++ (MyIterator<T> & iterator, int)
 	{
 		auto oldIter = iterator;
 		if (iterator.IsReverse())
@@ -99,7 +99,7 @@ public:
 		return oldIter;
 	}
 
-	friend const MyIterator<T> operator-- (MyIterator<T> & iterator, int)
+	friend MyIterator<T> operator-- (MyIterator<T> & iterator, int)
 	{
 		auto oldIter = iterator;
 		if (iterator.IsReverse())
@@ -126,9 +126,22 @@ public:
 
 	MyList<T>(MyList<T> const& list)
 	{
-		for (auto &it : list)
+	/*	for (auto &it : list)
 		{
 			PushBack(it);
+		}*/
+		std::unique_ptr<Node<T>> newNode;
+		try
+		{
+			if ()
+			{
+				
+			}
+			newNode = std::make_unique_ptr<Node<T>>(val);
+		}
+		catch (...)
+		{
+			throw;
 		}
 	}
 
@@ -258,8 +271,8 @@ public:
 
 	void operator= (MyList<T> const& list)
 	{
-		m_begin = move(list.begin());
-		m_end = (list.rbegin());
+		m_begin = move(list.end());
+		m_end = list.rbegin();
 		m_size = list.size();
 	}
 private:

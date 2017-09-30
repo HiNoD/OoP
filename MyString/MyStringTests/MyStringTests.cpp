@@ -308,7 +308,7 @@ BOOST_AUTO_TEST_CASE(can_be_assign_itself)
 BOOST_AUTO_TEST_SUITE_END()
 
 
-// operator + for CMyString, std::string, const char*
+// operator + for CMyString
 struct my_string_have_the_addition_operator_
 {
 	my_string_have_the_addition_operator_()

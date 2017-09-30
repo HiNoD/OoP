@@ -16,7 +16,6 @@ int main()
 	cout << strr[0] << endl;
 
 	auto mSt = CMyString();
-//	mSt[0] = 'a';
 	cout << mSt << endl;
 
 	auto mmmStr = CMyString("asd", 3);

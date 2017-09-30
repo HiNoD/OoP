@@ -1,6 +1,20 @@
 #include "stdafx.h"
 #include "../MyList/MyList.h"
 
+struct NoExceptMockObj
+{
+
+};
+
+
+struct MockObjWithExceptions : public NoExceptMockObj
+{
+	MockObjWithExceptions& operator=(std::string && str)
+	{
+		throw std::invalid_argument("Test Exception");
+	}
+};
+
 struct empty_my_list
 {
 	MyList<int> list;

@@ -41,7 +41,6 @@ CMyString::CMyString(CMyString const & other)
 	StrCpy(other.m_pChars);
 }
 
-//todo:::: использовать оератор
 CMyString::CMyString(CMyString && other)
 	: m_length(other.m_length)
 	, m_pChars(other.m_pChars)
