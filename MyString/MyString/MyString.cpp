@@ -8,12 +8,6 @@ const char* CMyString::m_nullTerminated = "\0";
 
 using namespace std;
 
-CMyString::CMyString(size_t length)
-	: m_length(length)
-	, m_pChars(new char[m_length + 1])
-{
-}
-
 CMyString::CMyString()
 	: m_length(0)
 	, m_pChars(nullptr)
